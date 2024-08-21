@@ -6,7 +6,7 @@ package com.hms.model;
 
 /**
  *
- * @author Nazmul
+ * @author Banna
  */
 public class PathologicalTest {
     String title;
@@ -20,9 +20,9 @@ public class PathologicalTest {
         this.cost = cost;
         this.isAvailable = isAvailable;               
     }
-     public String show(){
-        String output = "Test name: "+this.title+"<br>"
-                + "Cost: "+this.cost+"<br>"
+    public String show(){
+        String output = "Test name: "+this.title+"\n"
+                + "Cost: "+this.cost+"\n"
                 + "Availability: "+this.isAvailable;
         return output;
     }

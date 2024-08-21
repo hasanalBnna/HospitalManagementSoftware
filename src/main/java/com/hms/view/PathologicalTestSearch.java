@@ -6,7 +6,7 @@ package com.hms.view;
 
 /**
  *
- * @author Nazmul
+ * @author Banna
  */
 public class PathologicalTestSearch extends javax.swing.JFrame {
 

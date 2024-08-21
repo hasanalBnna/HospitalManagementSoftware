@@ -8,7 +8,7 @@ import com.hms.model.PathologicalTest;
 
 /**
  *
- * @author Nazmul
+ * @author Banna
  */
 public class PathologicalTestSetup extends javax.swing.JFrame {
 
@@ -91,9 +91,9 @@ public class PathologicalTestSetup extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(87, 87, 87)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(outPutFeild)
+                .addGap(79, 79, 79)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(outPutFeild, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 189, Short.MAX_VALUE)
@@ -130,8 +130,8 @@ public class PathologicalTestSetup extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(btnCancel, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
                     .addComponent(btnSubmit, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(18, 18, 18)
-                .addComponent(outPutFeild, javax.swing.GroupLayout.DEFAULT_SIZE, 73, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
+                .addComponent(outPutFeild, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
@@ -157,13 +157,12 @@ public class PathologicalTestSetup extends javax.swing.JFrame {
 
     private void btnSubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubmitActionPerformed
         // TODO add your handling code here:
-         PathologicalTest pTest = new PathologicalTest(
+        PathologicalTest pTest = new PathologicalTest(
         txtTestTitle.getText(),
                 Double.parseDouble(txtTestCost.getText()),
                 checkBoxAvailable.isSelected());
                
        outPutFeild.setText(pTest.show());
-       //outPutField.setText(pTest.show());
     }//GEN-LAST:event_btnSubmitActionPerformed
 
     private void outPutFeildActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_outPutFeildActionPerformed
